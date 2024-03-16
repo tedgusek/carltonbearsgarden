@@ -14,15 +14,9 @@ interface AboutPageProps {
 const AboutPage: React.FC<AboutPageProps> = ({ content }) => {
     return (
         <div>
-            <MarkDownContent content={content} />
+            <p> About blah blah blah </p>
         </div>
     );
-}
-
-export async function getStaticProps() {
-    const filePath = path.join(process.cwd(), 'content', 'about.md');
-    const content = await fs.readFile(filePath, 'utf8');
-    return { props: { content } };
 }
 
 export default AboutPage;
