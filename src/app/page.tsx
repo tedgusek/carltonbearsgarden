@@ -3,23 +3,33 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import ContentWindow from "@/components/ContentWindow";
 import React, { useState } from "react";
+// import welcomeBear from "@/content/welcomeBear.jpeg"
 
 export default function Home() {
   const [content, setContent] = useState<string>('AboutPage');
+  const [activeTab, setActiveTab] = useState<string>('AboutPage');
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-green-700">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-br from-yellow-100 to-white">
       <div className="z-10 max-w-5xl w-full font-mono text-sm flex items-center justify-center">
-        <p className="fixed left-0 top-0 flex items-center w-full justify-start border-b bg-gradient-to-r from-green-300 h-24 md:text-5xl text-black font-extrabold md:max-w-64 md:h-64 px-10 text-3xl">
+        <p className="fixed left-0 top-0 flex items-center w-full justify-start border-b bg-gradient-to-r from-green-300 h-24 md:text-xl text-black font-extrabold md:max-w-64 md:h-64 px-10 text-3xl">
           Carlton Bears Garden
+          <Image
+            src="/welcomeBear.jpeg"
+            alt="Painting of a brown teddy bear"
+            width={150}
+            height={150}
+            className="rounded-full drop-shadow-lg"
+          />
         </p>
+        
       </div>
       {/* <div className="flex height-full w-full fixed top-0"> */}
       {/* <div className="fixed top-15 flex flex-col items-center justify-center w-1/2 h-25 bg-blue-500 "> */}
       {/* <div className="flex flex-col items-center justify-center p-24 bg-blue-700 relative "> */}
       <div>
       {/* <div className="inline-block top-0 left-10 w-full bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none"> */}
-          <Navbar content= {content} setContent={setContent} />
+          <Navbar content= {content} setContent={setContent} activeTab= {activeTab} setActiveTab= {setActiveTab} />
         {/* </div> */}
         {/* <div className="inline-block top-50 left-50 h-1/4 w-1/2 bg-green-400"> */}
           {/* <div className="mt-10  "> */}

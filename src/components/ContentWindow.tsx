@@ -11,7 +11,7 @@ interface ContentWindowProps {
 
 const ContentWindow: React.FC<ContentWindowProps> = ({ content }) => {
     return (
-        <div className="h-2/3 bg-yellow-200 p-4 fixed top-20 right-10 w-2/3 rounded-md">
+        <div className="h-2/3 bg-gray-200 bg-opacity-50 p-4 fixed top-20 right-10 w-2/3 rounded-md overflow-auto">
         {content === 'AboutPage' && <AboutPage content={"AboutPage"}/>}
         {content === 'GalleryPage' && <GalleryPage content={"GalleryPage"}/>}
         {content === 'SuggestedDuesPage' && <SuggestedDuesPage content={"SuggestedDuesPage"}/>}
