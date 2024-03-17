@@ -6,9 +6,8 @@ import React, { useState } from "react";
 // import welcomeBear from "@/content/welcomeBear.jpeg"
 
 export default function Home() {
-  const [content, setContent] = useState<string>('AboutPage');
-  const [activeTab, setActiveTab] = useState<string>('AboutPage');
-
+  const [content, setContent] = useState<string>('About');
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-br from-yellow-100 to-white">
       <div className="z-10 max-w-5xl w-full font-mono text-sm flex items-center justify-center">
@@ -29,7 +28,7 @@ export default function Home() {
       {/* <div className="flex flex-col items-center justify-center p-24 bg-blue-700 relative "> */}
       <div>
       {/* <div className="inline-block top-0 left-10 w-full bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none"> */}
-          <Navbar content= {content} setContent={setContent} activeTab= {activeTab} setActiveTab= {setActiveTab} />
+          <Navbar content= {content} setContent={setContent} />
         {/* </div> */}
         {/* <div className="inline-block top-50 left-50 h-1/4 w-1/2 bg-green-400"> */}
           {/* <div className="mt-10  "> */}

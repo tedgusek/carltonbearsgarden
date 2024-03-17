@@ -8,7 +8,7 @@ interface HistoryPageProps {
 
 const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
     return (
-        <div className='h-full w-full overflow-auto text-black'>
+        <div className='h-full w-full overflow-auto text-black flex flex-col items-center'>
             {/* <h5 className='text-5xl font-bold'>History</h5> */}
             <h5 style={{ fontSize: '1.5rem' }} className='font-bold'>History</h5>
 
