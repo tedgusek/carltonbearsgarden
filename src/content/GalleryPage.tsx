@@ -8,7 +8,7 @@ interface GalleryPageProps {
 
 const GalleryPage: React.FC<GalleryPageProps> = ({ content }) => {
     return (
-        <div>
+        <div className='h-full w-full overflow-auto'>
             <p> Gallery blah blah blah </p>
         </div>
     );

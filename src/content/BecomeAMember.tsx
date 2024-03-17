@@ -8,7 +8,7 @@ interface BAMPageProps {
 
 const BAMPage: React.FC<BAMPageProps> = ({ content }) => {
     return (
-        <div>
+        <div className='h-full w-full overflow-auto'>
             <p> Becoma a member BAM blah blah blah </p>
         </div>
     );

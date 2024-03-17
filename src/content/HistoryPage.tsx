@@ -8,7 +8,7 @@ interface HistoryPageProps {
 
 const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
     return (
-        <div>
+        <div className='h-full w-full overflow-auto'>
             <p> History blah blah blah </p>
         </div>
     );

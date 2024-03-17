@@ -8,7 +8,7 @@ interface SuggestedDuesPageProps {
 
 const SuggestedDuesPage: React.FC<SuggestedDuesPageProps> = ({ content }) => {
     return (
-        <div>
+        <div className='h-full w-full overflow-auto'>
             <p> Suggested Dues  Paypal button blah blah blah </p>
         </div>
     );

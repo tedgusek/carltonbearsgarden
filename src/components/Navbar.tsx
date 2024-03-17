@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({content, setContent}) => {
         </button>)
 
     return (
-        <div className="fixed top-25 right-10">
+        <div className="fixed top-5 right-10">
             {buttons}
           
         </div>
