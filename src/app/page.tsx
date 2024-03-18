@@ -16,7 +16,7 @@ export default function Home() {
             height={1500}
             className="fixed left-0 top-0 z-0"
           />
-      <div className="z-50 max-w-5xl w-full font-mono text-sm flex items-center justify-center">
+      {/* <div className="z-50 max-w-5xl w-full font-mono text-sm flex items-center justify-center"> */}
         <p className="fixed left-0 top-0 py-6 flex flex-col items-center w-full justify-start bg-gradient-to-br from-green-300 via-transparent to-transparent h-40 md:text-lg text-black font-extrabold md:w-80 md:h-64 px-10 text-xl overflow-visible">
           Carlton Bears Garden
           <Image
@@ -28,8 +28,8 @@ export default function Home() {
           />
         </p>
         
-      </div>
-      <div>
+      {/* </div> */}
+      <div >
         <Navbar content={content} setContent={setContent} />
         <div className="absolute bottom-0 left-0 right-0 mb-15">
           <ContentWindow content={content} />
