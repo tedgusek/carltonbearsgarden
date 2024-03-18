@@ -19,12 +19,12 @@ const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
             <div className='py-4'>
                 <Image
                     src="/pre-garden.jpeg"
-                    alt="Pre-Rockwell Garden Site as a parkling lot."
+                    alt="Pre-Pacific Garden Site as a parkling lot."
                     width={250}
                     height={50}
                     className="drop-shadow-lg items-center" 
                 />
-                <figcaption className='text-sm font-thin'>Pre-Rockwell Garden Site as a parkling lot.</figcaption>
+                <figcaption className='text-sm font-thin'>Pre-Pacific Garden Site as a parkling lot.</figcaption>
             </div>
             <p>In order that the group not have to disband, they offered us another property to use while the Pacific Street site was being constructed. That was Carlton. Then the recession hit and that project never happened. We didn’t care though, ’cause now we had 2 gardens!</p>
             <p className='py-4'>At that time, the Bear’s were a pretty large group. We had about 40-some active gardeners, and I’d say about 10 of us used to come over and work at Carlton in those early days about as much as we worked at Pacific.</p>
@@ -34,12 +34,12 @@ const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
             <div className='py-4'>
                 <Image
                     src="/early-garden-bw.jpeg"
-                    alt="Garden in the early days"
+                    alt="Pacific Garden in the early days."
                     width={400}
                     height={50}
                     className="drop-shadow-lg items-center" 
                 />
-                <figcaption className='text-sm font-thin'>Garden in the early days.</figcaption>
+                <figcaption className='text-sm font-thin'>Pacific Garden in the early days.</figcaption>
             </div>
             <p className='py-4'>As the year’s have gone by, our memberships have come and gone. A few of us have stuck it out, but the reality is that memberships change, neighborhoods change, our own priorities change. We, as a group, don’t cross pollinate like we used to… in fact, all three gardens have so many new members, we mostly don’t know each other anymore. But the good news is that our keys still works in all 3 Bear’s Gardens!</p>
             <p>(not) The End</p>

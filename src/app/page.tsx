@@ -11,14 +11,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-br from-yellow-100 to-white">
       <div className="z-10 max-w-5xl w-full font-mono text-sm flex items-center justify-center">
-        <p className="fixed left-0 top-0 flex items-center w-full justify-start border-b bg-gradient-to-r from-green-300 h-24 md:text-xl text-black font-extrabold md:max-w-64 md:h-64 px-10 text-3xl">
+        <p className="fixed left-0 top-0 py-6 flex flex-col items-center w-full justify-start bg-gradient-to-br from-green-300 via-transparent to-transparent h-40 md:text-lg text-black font-extrabold md:w-80 md:h-64 px-10 text-xl overflow-visible">
           Carlton Bears Garden
           <Image
             src="/welcomeBear.jpeg"
             alt="Painting of a brown teddy bear"
             width={150}
             height={150}
-            className="rounded-full drop-shadow-lg border-white border-4"
+            className="rounded-full mt-2 drop-shadow-lg border-white border-4"
           />
         </p>
         
