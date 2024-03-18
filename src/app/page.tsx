@@ -18,7 +18,7 @@ export default function Home() {
             alt="Painting of a brown teddy bear"
             width={150}
             height={150}
-            className="rounded-full drop-shadow-lg"
+            className="rounded-full drop-shadow-lg border-white border-4"
           />
         </p>
         
