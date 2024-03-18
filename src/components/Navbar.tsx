@@ -27,11 +27,9 @@ const Navbar: React.FC<NavbarProps> = ({ content, setContent }) => {
 
     return (
         <div className="hidden md:flex">
-            {/* <div className="relative"> */}
-                <div className="fixed top-5 right-10">
-                    {buttons}
-                </div>
-            {/* </div> */}
+            <div className="fixed top-5 right-10">
+                {buttons}
+            </div>
         </div>
     )
 } 
