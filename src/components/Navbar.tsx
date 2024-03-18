@@ -7,7 +7,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ content, setContent }) => {
     // Array of the Buttons
-    const navMenuItems: string[] = ['Membership', 'History', 'About', 'Suggested Dues']
+    const navMenuItems: string[] = ['Membership', 'History', 'About', 'Dues']
     // Button Click Sets state to be used in the contentwindow
     const handleButtonClick = (menuItem: string) => {
         setContent(menuItem);
