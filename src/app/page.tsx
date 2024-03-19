@@ -19,7 +19,7 @@ export default function Home() {
             className="fixed left-0 top-0 z-0"
       />
       <div className="z-50 max-w-5xl w-full font-mono text-sm flex items-center justify-center">
-        <p className="fixed left-0 top-0 py-6 flex flex-col items-center w-full justify-start bg-gradient-to-br from-green-300 via-transparent to-transparent h-40 md:text-lg text-black font-extrabold md:w-80 md:h-64 px-10 text-xl overflow-visible">
+        <p className="fixed left-0 top-0 py-6 flex flex-col items-center w-full justify-start bg-gradient-to-br from-green-300 via-transparent to-transparent h-40 md:text-lg text-black font-extrabold md:w-80 md:h-2/3 px-10 text-xl overflow-visible">
           Carlton Bears Garden
           <Image
             src="/bear-logo.png"
