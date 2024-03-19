@@ -2,7 +2,9 @@ import React, {FC} from 'react';
 
 const FacebookIcon: FC = () => {
   return (
-    <a href='https://www.facebook.com/bkbearscommunitygarden' target="_blank" rel="noopener noreferrer">
+      <a href='https://www.facebook.com/bkbearscommunitygarden'
+          target="_blank"
+          rel="noopener noreferrer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         aria-label="Facebook"
