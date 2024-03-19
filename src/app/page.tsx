@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-br from-yellow-100 to-white">
       <Image
             src="/sunflower.jpeg"
-            alt="Painting of a brown teddy bear"
+            alt="Photo with blue sky and sunflower in the midst of a lot of green leaves"
             width={2500}
             height={1500}
             className="fixed left-0 top-0 z-0"
@@ -24,10 +24,10 @@ export default function Home() {
           <Image
             src="/bear-logo.png"
             alt="bear logo"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             // className="rounded-full mt-2 drop-shadow-lg border-white border-4 bg-slate-500 bg-opacity-75"
-            className=" drop-shadow-lg md:fixed left-10 top-4"
+            className=" drop-shadow-xl md:fixed left-10 top-16 rounded-full bg-yellow-200 border-green-700 border-4"
           />
         </p>
         
