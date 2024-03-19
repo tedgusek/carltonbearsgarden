@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ content, setContent }) => {
         </button>)
 
     return (
-        <div className="md:flex items-center">
+        <div className="md:flex flex md:flex-col md:items-center">
             <div className="fixed top-5 right-10">
                 {buttons}
             </div>

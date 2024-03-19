@@ -10,7 +10,7 @@ export default function Home() {
   const [content, setContent] = useState<string>('About');
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-br from-yellow-100 to-white">
+    <main className="flex flex-col items-center  p-24 bg-gradient-to-br from-yellow-100 to-white min-h-full w-full overflow-auto">
       <Image
             src="/sunflower.jpeg"
             alt="Photo with blue sky and sunflower in the midst of a lot of green leaves"
@@ -32,7 +32,7 @@ export default function Home() {
         </p>
         
       </div>
-      <div >
+      <div>
         <Navbar content={content} setContent={setContent} />
         <div className="absolute bottom-0 left-0 right-0 mb-15">
           <ContentWindow content={content} />
