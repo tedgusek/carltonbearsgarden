@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ content, setContent }) => {
   const buttons = navMenuItems.map((menuItem, index) => (
     <button
       key={index}
-      className={`py-2 px-1 sm:mt-6 mt-48 mx-1 rounded-lg text-black font-bold hover:bg-yellow-100 text-xs sm:text-lg z-10 ${
+      className={`py-2 px-1 sm:mt-6 mx-1 rounded-lg text-black font-bold hover:bg-yellow-100 text-xs sm:text-lg z-10 ${
         content === menuItem ? 'bg-yellow-100 ' : 'bg-white bg-opacity-75'
       }`}
       onClick={() => {
@@ -28,8 +28,10 @@ const Navbar: React.FC<NavbarProps> = ({ content, setContent }) => {
   ));
 
   return (
-    <div className='fixed top-4 right-4'>
-      <div className=' fixed top-5 right-10'>{buttons}</div>
+    <div className=''>
+      <div className=' sm:fixed sm:top-5 sm:right-10 flex flex-row items-center '>
+        {buttons}
+      </div>
     </div>
   );
 };
