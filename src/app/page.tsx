@@ -20,23 +20,24 @@ export default function Home() {
           className='fixed top-0 z-0 w-full  bg-inherit opacity-50 '
         />
       </div>
-      <div className='z-50 max-w-5xl w-full font-mono text-sm flex flex-col items-center '>
-        <p className='fixed left-0 top-0 py-6 flex flex-col items-center w-full justify-center bg-gradient-to-br from-green-300 via-transparent to-transparent  lg:text-5xl md:text-4xl sm:text-3xl sm:max-w-56 text-black font-extrabold md:w-80 md:top-0 px-10 text-sm sm:fixed sm:top-0'>
-          Carlton Bears Garden
-          <Image
-            src='/bear-logo.png'
-            alt='bear logo'
-            width={150}
-            height={150}
-            // className="rounded-full mt-2 drop-shadow-lg border-white border-4 bg-slate-500 bg-opacity-75"
-            className=' top-4 drop-shadow-xl  sm:w-40 mt-2 left-10 lg:top-56 lg:left-20 lg:fixed sm:fixed sm:left-14 md:top-40 rounded-full bg-yellow-200 border-green-700 border-4 flex flex-col items-center sm:top-40'
-          />
-        </p>
-      </div>
-      <div className='fixed '>
+      {/* <div className='z-50 max-w-5xl w-full font-mono text-sm flex flex-col items-center '> */}
+      {/* <p className='fixed left-0 top-0 py-6 flex flex-col items-center w-full justify-center bg-gradient-to-br from-green-300 via-transparent to-transparent  lg:text-5xl md:text-4xl sm:text-3xl sm:max-w-56 text-black font-extrabold md:w-80 md:top-0 px-10 text-sm sm:fixed sm:top-0'> */}
+      {/* Carlton Bears Garden */}
+      <Image
+        src='/bear-logo-with-text.png'
+        alt='bear logo'
+        width={150}
+        height={150}
+        // className="rounded-full mt-2 drop-shadow-lg border-white border-4 bg-slate-500 bg-opacity-75"
+        // className=' top-4 drop-shadow-xl  sm:w-40 mt-2 left-10 lg:top-10 lg:left-10 lg:fixed lg:w-56 sm:fixed sm:left-10 flex flex-col items-center sm:top-10'
+        className='fixed top-4 drop-shadow-xl min-w-64  items-center sm:fixed sm:w-56 sm:left-4 sm:top-4 '
+      />
+      {/* </p> */}
+      {/* </div> */}
+      <div className='fixed top-64 '>
         <Navbar content={content} setContent={setContent} />
       </div>
-      <div className=' '>
+      <div className='mt-56 sm:mt-0'>
         <ContentWindow content={content} />
       </div>
 
