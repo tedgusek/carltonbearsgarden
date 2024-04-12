@@ -6,7 +6,7 @@ interface BAMPageProps {
 
 const BAMPage: React.FC<BAMPageProps> = ({ content }) => {
   return (
-    <div className='h-96 w-full overflow-y-auto text-black flex flex-col items-stretch'>
+    <div className='h-96 w-full  text-black flex flex-col items-stretch'>
       <h5 style={{ fontSize: '1.5rem' }} className='font-bold'>
         Become a Member
       </h5>
