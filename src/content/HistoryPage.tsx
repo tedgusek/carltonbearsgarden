@@ -7,7 +7,8 @@ interface HistoryPageProps {
 
 const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
   return (
-    <div className='h-full w-full text-black flex flex-col items-center'>
+    // <div className='h-full w-full text-black flex flex-col items-center'>
+    <div className='h-96 w-full  text-black flex flex-col items-stretch'>
       {/* <h5 className='text-5xl font-bold'>History</h5> */}
       <h5 style={{ fontSize: '1.5rem' }} className='font-bold'>
         History
@@ -32,7 +33,8 @@ const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
         Avenue. Sure enough, by 1990, our work paid off. We were going to be
         saved, but they’d have to tear us out to build their project first.
       </p>
-      <div className='py-4'>
+      {/* <div className='py-4'> */}
+      <div className='py-4 flex flex-col items-center'>
         <Image
           src='/pre-garden.jpeg'
           alt='Pre-Pacific Garden Site as a parkling lot.'
@@ -77,7 +79,8 @@ const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
         Rockwell in NYC Parks and Pacific in the newly formed Brooklyn Alliance
         of Neighborhood Gardens (BANG) Land Trust.
       </p>
-      <div className='py-4'>
+      {/* <div className='py-4'> */}
+      <div className='py-4 flex flex-col items-center'>
         <Image
           src='/early-garden-bw.jpeg'
           alt='Pacific Garden in the early days.'
