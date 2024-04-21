@@ -10,7 +10,7 @@ export default function Home() {
   const [content, setContent] = useState<string>('Membership');
 
   return (
-    <main className='min-h-screen flex flex-col items-center p-24 bg-gradient-to-br from-yellow-100 to-white  w-screen overflow-y-auto'>
+    <main className=' overflow-auto max-h-screen flex flex-col items-center p-24 bg-gradient-to-br from-yellow-100 to-white  w-screen relative'>
       <div className='absolute inset-0 z-0 '>
         <Image
           src='/aerial.jpeg'
@@ -37,7 +37,8 @@ export default function Home() {
       <div className='fixed top-64 '>
         <Navbar content={content} setContent={setContent} />
       </div>
-      <div className='mt-56 sm:mt-0'>
+      {/* <div className='mt-56 sm:mt-0'> */}
+      <div className='absolute top-32 bottom-32 sm:top-64'>
         <ContentWindow content={content} />
       </div>
 
