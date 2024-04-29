@@ -4,15 +4,35 @@ import Navbar from '@/components/Navbar';
 import ContentWindow from '@/components/ContentWindow';
 import InstagramIcon from '@/components/InstagramIcon';
 import FacebookIcon from '@/components/FacebookIcon';
+import GmailIcon from '@/components/GmailIcon';
 import React, { useState } from 'react';
 import WelcomeModal from '@/components/modals/WelcomeModal';
 
 export default function Home() {
   const [content, setContent] = useState<string>('Membership');
   const [isModalOpen, setIsModalOpen] = useState<boolean>(true);
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [body, setBody] = useState('');
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const handleForm = () => {
+    setBody('');
+    setIsFormOpen(!isFormOpen);
+  };
+
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setBody(event.target.value);
+  };
+
+  const openForm = () => {
+    setIsFormOpen(true);
+  };
+
+  const closeForm = () => {
+    setIsFormOpen(false);
   };
 
   return (
@@ -45,12 +65,20 @@ export default function Home() {
         <Navbar content={content} setContent={setContent} />
       </div>
       {/* <div className='mt-56 sm:mt-0'> */}
-      <div className='absolute top-32 bottom-32 sm:top-64'>
+      <div className='absolute top-32 bottom-32 sm:top-64 z-20'>
         <ContentWindow content={content} />
       </div>
-
-      <FacebookIcon />
-      <InstagramIcon />
+      <div className='z-50'>
+        <GmailIcon
+          body={body}
+          isFormOpen={isFormOpen}
+          handleForm={handleForm}
+          setBody={setBody}
+          handleChange={handleChange}
+        />
+        <FacebookIcon />
+        <InstagramIcon />
+      </div>
     </main>
   );
 }
