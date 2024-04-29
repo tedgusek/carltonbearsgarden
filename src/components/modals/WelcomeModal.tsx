@@ -7,8 +7,8 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ onClose }) => {
   };
 
   return (
-    <div className='fixed inset-0 flex flex-col items-center justify-center bg-yellow-100 bg-opacity-50 z-50 '>
-      <div className='max-w-md w-full p-4 bg-yellow-50 rounded-xl shadow-lg flex flex-col  border-gray-500 border-4 shadow-green-100'>
+    <div className='fixed inset-0 flex flex-col items-center justify-center bg-yellow-100 bg-opacity-75 z-50 '>
+      <div className='max-w-lg w-5/6 p-4 bg-yellow-50 rounded-xl shadow-lg flex flex-col  border-gray-500 border-4 shadow-green-100'>
         <h2 className='text-xl font-bold mb-2 text-black flex flex-col items-center text-center'>
           Welcome To Carlton Bears Garden (Website!)
         </h2>
