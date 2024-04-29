@@ -5,12 +5,19 @@ import ContentWindow from '@/components/ContentWindow';
 import InstagramIcon from '@/components/InstagramIcon';
 import FacebookIcon from '@/components/FacebookIcon';
 import React, { useState } from 'react';
+import WelcomeModal from '@/components/modals/WelcomeModal';
 
 export default function Home() {
   const [content, setContent] = useState<string>('Membership');
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(true);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <main className=' overflow-auto max-h-screen flex flex-col items-center p-24 bg-gradient-to-br from-yellow-100 to-white  w-screen relative'>
+      {isModalOpen && <WelcomeModal onClose={closeModal} />}
       <div className='absolute inset-0 z-0 '>
         <Image
           src='/aerial.jpeg'
