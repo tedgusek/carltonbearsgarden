@@ -28,7 +28,6 @@ const GmailIcon: FC = () => {
           <line x1='4' y1='7' x2='12' y2='12'></line>
           <line x1='12' y1='12' x2='19.5' y2='8'></line>
         </svg>
-        ;
       </button>
     </div>
   );
