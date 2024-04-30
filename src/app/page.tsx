@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   return (
-    <main className=' overflow-auto max-h-screen flex flex-col items-center p-24 bg-gradient-to-br from-yellow-100 to-white  w-screen relative'>
+    <main className=' overflow-auto h-screen flex flex-col items-center p-24 bg-gradient-to-br from-yellow-100 to-white  w-screen relative'>
       {isModalOpen && <WelcomeModal onClose={closeModal} />}
       <div className='absolute inset-0 z-0 '>
         <Image
@@ -40,14 +40,14 @@ export default function Home() {
         <Navbar content={content} setContent={setContent} />
       </div>
 
-      <div className='absolute top-32 bottom-32 sm:top-64 z-20'>
+      <div className='absolute top-32 bottom-32 sm:top-64 z-40 '>
         <ContentWindow content={content} />
       </div>
-      <div className='z-40'>
-        <GmailIcon />
-        <FacebookIcon />
-        <InstagramIcon />
-      </div>
+      {/* <div className='z-30 bg-inherit'> */}
+      <GmailIcon />
+      <FacebookIcon />
+      <InstagramIcon />
+      {/* </div> */}
     </main>
   );
 }
