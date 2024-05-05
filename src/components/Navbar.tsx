@@ -3,15 +3,27 @@ import React, { useState } from 'react';
 interface NavbarProps {
   content: string;
   setContent: React.Dispatch<React.SetStateAction<string>>;
+  scrollToTop: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ content, setContent }) => {
+const Navbar: React.FC<NavbarProps> = ({
+  content,
+  setContent,
+  scrollToTop,
+}) => {
   // Array of the Buttons
   const navMenuItems: string[] = ['Membership', 'History', 'About', 'Dues'];
   // Button Click Sets state to be used in the contentwindow
   const handleButtonClick = (menuItem: string) => {
     setContent(menuItem);
   };
+
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth',
+  //   });
+  // };
 
   const buttons = navMenuItems.map((menuItem, index) => (
     <button
@@ -21,6 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ content, setContent }) => {
       }`}
       onClick={() => {
         handleButtonClick(menuItem);
+        scrollToTop();
       }}
     >
       {menuItem}

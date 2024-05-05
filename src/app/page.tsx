@@ -5,11 +5,12 @@ import ContentWindow from '@/components/ContentWindow';
 import InstagramIcon from '@/components/InstagramIcon';
 import FacebookIcon from '@/components/FacebookIcon';
 import GmailIcon from '@/components/GmailIcon';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 // import WelcomeModal from '@/components/modals/WelcomeModal';
 
 export default function Home() {
   const [content, setContent] = useState<string>('Welcome');
+  const contentRef = useRef<HTMLDivElement>(null);
   // const [isModalOpen, setIsModalOpen] = useState<boolean>(true);
 
   // const closeModal = () => {
@@ -17,6 +18,18 @@ export default function Home() {
   // };
   const handleClick = () => {
     setContent('Welcome');
+    scrollToTop();
+  };
+
+  const scrollToTop = () => {
+    if (contentRef.current) {
+      contentRef.current.scrollTop = 0;
+    }
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: 'smooth',
+    // });
+    console.log('Did I scroll?');
   };
 
   return (
@@ -42,11 +55,15 @@ export default function Home() {
       />
 
       <div className='fixed top-64 '>
-        <Navbar content={content} setContent={setContent} />
+        <Navbar
+          content={content}
+          setContent={setContent}
+          scrollToTop={scrollToTop}
+        />
       </div>
 
       <div className='absolute top-32 bottom-32 sm:top-64 z-40 '>
-        <ContentWindow content={content} />
+        <ContentWindow content={content} contentRef={contentRef} />
       </div>
       {/* <div className='z-30 bg-inherit'> */}
       <GmailIcon />
