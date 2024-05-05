@@ -1,8 +1,5 @@
 import React from 'react';
-
-interface BAMPageProps {
-  content: string;
-}
+import { BAMPageProps } from '@/app/types/interface';
 
 const BAMPage: React.FC<BAMPageProps> = ({ content }) => {
   return (
@@ -10,7 +7,6 @@ const BAMPage: React.FC<BAMPageProps> = ({ content }) => {
       <h5 style={{ fontSize: '1.5rem' }} className='font-bold'>
         Become a Member
       </h5>
-      {/* <p> If you&apos;re interested in becoming a member, please fill out our application form <a href='https://docs.google.com/forms/d/1H_3FfZ0LvSMaRMyXcskXin1zFIOrRUpC9b_I77_bx7o/edit' target= '_blank' rel='noopener noreferrer' className='font-bold'>Here</a> </p> */}
       <br></br>
       <p>
         Anyone is welcome to join our community garden. If you&apos;re

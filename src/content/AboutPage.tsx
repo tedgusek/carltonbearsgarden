@@ -1,14 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-
-// import { getStaticProps } from 'next/dist/build/templates/pages';
-// import ExampleComponent from './TypeOfWindow';
-
-interface AboutPageProps {
-  content: string;
-}
-
-// console.log(ExampleComponent)
+import { AboutPageProps } from '@/app/types/interface';
 
 const AboutPage: React.FC<AboutPageProps> = ({ content }) => {
   return (
@@ -16,7 +8,6 @@ const AboutPage: React.FC<AboutPageProps> = ({ content }) => {
       <h5 style={{ fontSize: '1.5rem' }} className='font-bold'>
         About
       </h5>
-      {/* <p style={{ fontSize: '1.5rem' }} className='font-bold'>About</p> */}
       <p>
         Carlton Ave Brooklyn Bears Garden is one of the 3 Brooklyn Bears
         gardens. It is tended by volunteers and everyone is welcome to join! You

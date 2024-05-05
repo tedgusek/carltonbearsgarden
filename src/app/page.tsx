@@ -6,35 +6,26 @@ import InstagramIcon from '@/components/InstagramIcon';
 import FacebookIcon from '@/components/FacebookIcon';
 import GmailIcon from '@/components/GmailIcon';
 import React, { useRef, useState } from 'react';
-// import WelcomeModal from '@/components/modals/WelcomeModal';
 
 export default function Home() {
   const [content, setContent] = useState<string>('Welcome');
   const contentRef = useRef<HTMLDivElement>(null);
-  // const [isModalOpen, setIsModalOpen] = useState<boolean>(true);
 
-  // const closeModal = () => {
-  //   setIsModalOpen(false);
-  // };
+  // Handles the click functionality of the Logo
   const handleClick = () => {
     setContent('Welcome');
     scrollToTop();
   };
 
+  // Allows the content window to render at the top of the div when clicked
   const scrollToTop = () => {
     if (contentRef.current) {
       contentRef.current.scrollTop = 0;
     }
-    // window.scrollTo({
-    //   top: 0,
-    //   behavior: 'smooth',
-    // });
-    console.log('Did I scroll?');
   };
 
   return (
     <main className=' overflow-auto h-screen flex flex-col items-center p-24 bg-gradient-to-br from-yellow-100 to-white  w-screen relative'>
-      {/* {isModalOpen && <WelcomeModal onClose={closeModal} />} */}
       <div className='absolute inset-0 z-0 '>
         <Image
           src='/aerial.jpeg'
@@ -65,11 +56,9 @@ export default function Home() {
       <div className='absolute top-32 bottom-32 sm:top-64 z-40 '>
         <ContentWindow content={content} contentRef={contentRef} />
       </div>
-      {/* <div className='z-30 bg-inherit'> */}
       <GmailIcon />
       <FacebookIcon />
       <InstagramIcon />
-      {/* </div> */}
     </main>
   );
 }

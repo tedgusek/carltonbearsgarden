@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const DonateButton: React.FC = () => {
   const handleButtonClick = () => {
@@ -7,7 +7,6 @@ const DonateButton: React.FC = () => {
 
   return (
     <button
-      // key={index}
       className={`py-2 px-8 md:mt-6 my-4 mx-1 rounded-lg text-black font-bold hover:bg-yellow-100 bg-green-400 drop-shadow-lg  `}
       onClick={handleButtonClick}
     >
