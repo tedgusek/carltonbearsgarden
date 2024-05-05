@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-
-interface NavbarProps {
-  content: string;
-  setContent: React.Dispatch<React.SetStateAction<string>>;
-  scrollToTop: () => void;
-}
+import { NavbarProps } from '@/app/types/interface';
 
 const Navbar: React.FC<NavbarProps> = ({
   content,
@@ -17,13 +12,6 @@ const Navbar: React.FC<NavbarProps> = ({
   const handleButtonClick = (menuItem: string) => {
     setContent(menuItem);
   };
-
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: 'smooth',
-  //   });
-  // };
 
   const buttons = navMenuItems.map((menuItem, index) => (
     <button

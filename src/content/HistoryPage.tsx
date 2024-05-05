@@ -1,15 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-
-interface HistoryPageProps {
-  content: string;
-}
+import { HistoryPageProps } from '@/app/types/interface';
 
 const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
   return (
-    // <div className='h-full w-full text-black flex flex-col items-center'>
     <div className='h-96 w-full  text-black flex flex-col items-stretch'>
-      {/* <h5 className='text-5xl font-bold'>History</h5> */}
       <h5 style={{ fontSize: '1.5rem' }} className='font-bold'>
         History
       </h5>
@@ -33,7 +28,6 @@ const HistoryPage: React.FC<HistoryPageProps> = ({ content }) => {
         Avenue. Sure enough, by 1990, our work paid off. We were going to be
         saved, but they’d have to tear us out to build their project first.
       </p>
-      {/* <div className='py-4'> */}
       <div className='py-4 flex flex-col items-center'>
         <Image
           src='/pre-garden.jpeg'

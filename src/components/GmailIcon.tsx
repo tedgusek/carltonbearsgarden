@@ -1,10 +1,11 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 
 const GmailIcon: FC = () => {
   const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     const email = 'carltonbearsgarden@gmail.com';
-    const subject = 'Inquiry%20about%20the%20Garden%20from%20the%20website'; // You can change this to your desired subject
+    // Sets default setting of email to allow recipient to know where it came from
+    const subject = 'Inquiry%20about%20the%20Garden%20from%20the%20website';
     const mailtoLink = `mailto:${email}?subject=${subject}`;
     window.location.href = mailtoLink;
   };
